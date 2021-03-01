@@ -14,4 +14,4 @@ def startpage():
     board = boggle_game.make_board()
     session['board'] = board
 
-    return render_template("index.html")
+    return render_template("index.html", board=board)
