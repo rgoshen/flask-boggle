@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# editor settings
+.vscode/
+
 # pdf files
 *.pdf
