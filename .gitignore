@@ -133,4 +133,7 @@ dmypy.json
 
 # pdf files
 *.pdf
+<<<<<<< HEAD
 *.DS_Store
+=======
+>>>>>>> 3feba4ea20661e9a8951d9e33795830e8777b6b5

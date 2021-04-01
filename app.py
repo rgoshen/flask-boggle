@@ -2,11 +2,16 @@ from flask import Flask, request, render_template, jsonify, session
 from boggle import Boggle
 
 app = Flask(__name__)
+<<<<<<< HEAD
 app.config["SECRET_KEY"] = "fdfgkjtjkkg45yfdb"
+=======
+app.config["SECRET_KEY"] = "phillyflyersarechampions"
+>>>>>>> 3feba4ea20661e9a8951d9e33795830e8777b6b5
 
 boggle_game = Boggle()
 
 
+<<<<<<< HEAD
 @app.route("/")
 def homepage():
     """Show board."""
@@ -44,3 +49,13 @@ def post_score():
     session['highscore'] = max(score, highscore)
 
     return jsonify(brokeRecord=score > highscore)
+=======
+@app.route('/')
+def startpage():
+    """Show the game board."""
+
+    board = boggle_game.make_board()
+    session['board'] = board
+
+    return render_template("index.html", board=board)
+>>>>>>> 3feba4ea20661e9a8951d9e33795830e8777b6b5

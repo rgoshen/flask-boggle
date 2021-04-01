@@ -1,12 +1,28 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
   <head>
     <title>Boggle</title>
     <link rel="stylesheet" href="/static/boggle.css" />
+=======
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../static/imgs/NovusTerraLogo.png"
+      type="image/x-icon"
+    />
+    <title>Boggle</title>
+>>>>>>> 3feba4ea20661e9a8951d9e33795830e8777b6b5
   </head>
   <body>
     <section id="boggle">
       <table class="board">
+<<<<<<< HEAD
         <tbody>
           {% for row in board %}
           <tr>
@@ -45,5 +61,17 @@
     <script>
       let game = new BoggleGame("boggle", 60);
     </script>
+=======
+        {% for row in board %}
+        <tr>
+          {% for cell in row %}
+          <td>{{ cell }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+    </section>
+    <script src="../static/scripts/scripts.js"></script>
+>>>>>>> 3feba4ea20661e9a8951d9e33795830e8777b6b5
   </body>
 </html>
